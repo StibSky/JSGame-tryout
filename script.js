@@ -7,25 +7,41 @@ let solutionsTitle = [
     }
     ];
 
+
+
+
+
+
+
+
 songtoPlay = document.getElementById("Song1");
 
-songInput = document.getElementById("songName").innerHTML;
-
+// play and pause
 document.getElementById("play").addEventListener("click", function () {
 songtoPlay.play();
 });
-
 document.getElementById("pause").addEventListener("click", function () {
     songtoPlay.pause();
 });
+
+
+
+
 document.getElementById("sumbit").addEventListener("click", function () {
     let score = document.getElementById("playerScore").innerHTML;
-    console.log(score);
 
-    console.log(document.getElementById("songName").value.toLowerCase());
-    console.log(solutionsTitle[0].title.toLowerCase());
 
-    if (document.getElementById("songName").innerHTML === songName.title) {
+    console.log(document.getElementById("artistName").value.toLowerCase());
+    console.log(solutionsTitle[0].artist.toLowerCase());
+
+    if (document.getElementById("songName").value.toLowerCase() === solutionsTitle[0].title.toLowerCase()) {
         score++;
+        document.getElementById("playerScore").innerHTML = score;
     }
+    if (document.getElementById("artistName").value.toLowerCase() === solutionsTitle[0].artist.toLowerCase()) {
+        score++;
+        document.getElementById("playerScore").innerHTML = score;
+    }
+    onclick: this.disabled = true;
+
 });
