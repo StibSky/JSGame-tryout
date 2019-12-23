@@ -1,35 +1,83 @@
 * {
     background-color: darkblue;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+#titel {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: crimson;
+    color: yellow;
+    padding: 1vh;
+}
+
+#play, #pause {
+    margin: 11px;
 }
 
 #centerDiv {
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3vw;
-    margin: 3vw;
+    align-content: center;
     border-radius: 10px;
+    background-color: lightgreen;
+    margin-top: 2vw;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #playButtons {
+    background-color: cadetblue;
     display: flex;
     justify-content: space-between;
     margin: 2vw;
 }
 
 #Section1 {
+    background-color: cadetblue;
     display: flex;
     flex-direction: row;
     padding: 3vw;
-    margin: 3vw;
+    margin-top: 1vw;
+    width: 280px;
+
 }
 
 #Section2 {
+    background-color: cadetblue;
     display: flex;
     flex-direction: row;
     padding: 3vw;
-    margin: 3vw;
+    width: 280px;
+
+}
+
+#Section3 {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    padding: 3vw;
+    margin-top: 2vw;
+
+    text-align: justify;
+}
+
+#playerScore {
+    margin-left: 28vh;
+}
+
+#sumbit {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+#songName, #artistName{
+    margin: 3vh;
 }
