@@ -7,7 +7,7 @@ let solutions = [
     }
     ];
 
-Audio.play();
+songtoPlay = document.getElementById("Song1");
 
 let score = 0;
 
@@ -15,5 +15,14 @@ for (let i = 0; i <solutions.length ; i++) {
     songName = solutions[i];
 }
 if (document.getElementById("songName").value === songName.title) {
-    score++
+    score++;
+    console.log(songName.title)
 }
+
+document.getElementById("play").addEventListener("click", function () {
+songtoPlay.play();
+});
+
+document.getElementById("pause").addEventListener("click", function () {
+    songtoPlay.pause();
+});
