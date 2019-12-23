@@ -10,11 +10,11 @@ let solutionsTitle = [
 
 
 
+numberSong = 1;
 
 
 
-
-songtoPlay = document.getElementById("Song1");
+songtoPlay = document.getElementById("Song"+ numberSong);
 
 // play and pause
 document.getElementById("play").addEventListener("click", function () {
@@ -38,10 +38,21 @@ document.getElementById("sumbit").addEventListener("click", function () {
         score++;
         document.getElementById("playerScore").innerHTML = score;
     }
+    else  {
+        alert("wrong title, go next")
+    }
     if (document.getElementById("artistName").value.toLowerCase() === solutionsTitle[0].artist.toLowerCase()) {
         score++;
         document.getElementById("playerScore").innerHTML = score;
     }
+    else  {
+        alert("wrong artist, go next")
+    }
     onclick: this.disabled = true;
+});
+
+
+document.getElementById("nextSong").addEventListener("click", function () {
+numberSong++;
 
 });
