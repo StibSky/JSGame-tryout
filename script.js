@@ -1,4 +1,4 @@
-let solutions = [
+let solutionsTitle = [
     {
         title: "the final countdown", artist: "europe"
     },
@@ -9,15 +9,7 @@ let solutions = [
 
 songtoPlay = document.getElementById("Song1");
 
-let score = 0;
-
-for (let i = 0; i <solutions.length ; i++) {
-    songName = solutions[i];
-}
-if (document.getElementById("songName").value === songName.title) {
-    score++;
-    console.log(songName.title)
-}
+songInput = document.getElementById("songName").innerHTML;
 
 document.getElementById("play").addEventListener("click", function () {
 songtoPlay.play();
@@ -25,4 +17,15 @@ songtoPlay.play();
 
 document.getElementById("pause").addEventListener("click", function () {
     songtoPlay.pause();
+});
+document.getElementById("sumbit").addEventListener("click", function () {
+    let score = document.getElementById("playerScore").innerHTML;
+    console.log(score);
+
+    console.log(document.getElementById("songName").value.toLowerCase());
+    console.log(solutionsTitle[0].title.toLowerCase());
+
+    if (document.getElementById("songName").innerHTML === songName.title) {
+        score++;
+    }
 });
