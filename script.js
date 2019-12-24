@@ -1,3 +1,6 @@
+(function() {
+
+
 let solutionsTitle = [
     {
         title: "the final countdown", artist: "europe"
@@ -10,11 +13,11 @@ let solutionsTitle = [
 
 
 
-numberSong = 1;
+let numberSong = 1;
 
 
 
-songtoPlay = document.getElementById("Song"+ numberSong);
+songtoPlay = document.getElementById(`Song${numberSong}`);
 
 // play and pause
 document.getElementById("play").addEventListener("click", function () {
@@ -53,6 +56,10 @@ document.getElementById("sumbit").addEventListener("click", function () {
 
 
 document.getElementById("nextSong").addEventListener("click", function () {
+
 numberSong++;
+console.log(songtoPlay);
+    onclick: document.getElementById("sumbit").disabled = false;
 
 });
+})();
