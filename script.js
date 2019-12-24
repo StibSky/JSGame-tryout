@@ -47,26 +47,27 @@ var artistName = document.getElementById("artistName");
 var songtoPlay = document.getElementById("Song"+ numberSong);
 var playerScore = document.getElementById("playerScore");
 
-
-//Loading song
-
-nextButton.addEventListener("click", function () {
-    ++numberSong;
-    songtoPlay = document.getElementById("Song"+ numberSong);
-    submitButton.disabled = false;
-
-
-});
-
 // play and pause
 
 playButton.addEventListener("click", function () {
-songtoPlay.play();
+    songtoPlay.play();
 
 });
 pauseButton.addEventListener("click", function () {
     songtoPlay.pause();
 });
+
+//Loading song
+
+nextButton.addEventListener("click", function () {
+    songtoPlay.pause();
+    ++numberSong;
+    songtoPlay = document.getElementById("Song"+ numberSong);
+    submitButton.disabled = false;
+
+});
+
+
 
 
 
@@ -74,6 +75,7 @@ pauseButton.addEventListener("click", function () {
 submitButton.addEventListener("click", function () {
     let score = document.getElementById("playerScore").innerHTML;
     submitButton.disabled = true;
+    songtoPlay.pause();
 
     if (songName.value.toLowerCase() === solutionsTitle[numberSong].title.toLowerCase()) {
         score++;
