@@ -24,7 +24,7 @@ const solutionsTitle = [
         title: "scar tissue", artist: "red hot chili peppers"
     },
     {
-        title: "whats my name again", artist: " blink 182"
+        title: "whats my age again", artist: "blink 182"
     },
     {
         title: "snake jazz", artist: "snake planet"
@@ -64,7 +64,8 @@ nextButton.addEventListener("click", function () {
     ++numberSong;
     songtoPlay = document.getElementById("Song"+ numberSong);
     submitButton.disabled = false;
-
+    songName.innerHTML = "";
+    artistName.innerHTML = "";
 });
 
 
@@ -76,6 +77,8 @@ submitButton.addEventListener("click", function () {
     let score = document.getElementById("playerScore").innerHTML;
     submitButton.disabled = true;
     songtoPlay.pause();
+    songName.innerHTML = "";
+    artistName.innerHTML = "";
 
     if (songName.value.toLowerCase() === solutionsTitle[numberSong].title.toLowerCase()) {
         score++;
