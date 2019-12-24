@@ -60,6 +60,9 @@ pauseButton.addEventListener("click", function () {
 //Loading song
 
 nextButton.addEventListener("click", function () {
+    if (numberSong == (solutionsTitle.length-1)) {
+        document.getElementById("nextSong").innerHTML = "Finish Game";
+    }
     if (numberSong == solutionsTitle.length) {
         alert(`The game has finished. Your score is ${playerScore.innerHTML}/${(solutionsTitle.length)*2}`)
     } else {
@@ -68,8 +71,6 @@ nextButton.addEventListener("click", function () {
         songtoPlay = document.getElementById("Song"+ numberSong);
     }
     submitButton.disabled = false;
-    songName.innerHTML = "";
-    artistName.innerHTML = "";
     console.log(numberSong);
     console.log(solutionsTitle.length);
 
@@ -84,8 +85,6 @@ submitButton.addEventListener("click", function () {
     let score = document.getElementById("playerScore").innerHTML;
     submitButton.disabled = true;
     songtoPlay.pause();
-    songName.innerHTML = "";
-    artistName.innerHTML = "";
 
     if (songName.value.toLowerCase() === solutionsTitle[numberSong].title.toLowerCase()) {
         score++;
