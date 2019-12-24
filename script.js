@@ -1,58 +1,71 @@
-let solutionsTitle = [
+const solutionsTitle = [
     {
         title: "the final countdown", artist: "europe"
     },
     {
-        title: "welcome to the jungle", artist: "guns 'n roses"
+        title: "piano man", artist: "billy joel"
     }
     ];
 
 
 
+//
+let numberSong = 0;
+// Declaring buttons as variables
+var playButton = document.getElementById("play");
+var pauseButton = document.getElementById("pause");
+var nextButton = document.getElementById("nextSong");
+var submitButton = document.getElementById("sumbit");
 
-numberSong = 1;
+// song and artist name
+var songName = document.getElementById("songName");
+var artistName = document.getElementById("artistName");
+var songtoPlay = document.getElementById("Song"+ numberSong);
+var playerScore = document.getElementById("playerScore");
 
 
+//Loading song
 
-songtoPlay = document.getElementById("Song"+ numberSong);
+nextButton.addEventListener("click", function () {
+    ++numberSong;
+    songtoPlay = document.getElementById("Song"+ numberSong);
+    submitButton.disabled = false;
+
+
+});
 
 // play and pause
-document.getElementById("play").addEventListener("click", function () {
+
+playButton.addEventListener("click", function () {
 songtoPlay.play();
+
 });
-document.getElementById("pause").addEventListener("click", function () {
+pauseButton.addEventListener("click", function () {
     songtoPlay.pause();
 });
 
 
 
 
-document.getElementById("sumbit").addEventListener("click", function () {
+submitButton.addEventListener("click", function () {
     let score = document.getElementById("playerScore").innerHTML;
+    submitButton.disabled = true;
 
-
-    console.log(document.getElementById("artistName").value.toLowerCase());
-    console.log(solutionsTitle[0].artist.toLowerCase());
-
-    if (document.getElementById("songName").value.toLowerCase() === solutionsTitle[0].title.toLowerCase()) {
+    if (songName.value.toLowerCase() === solutionsTitle[numberSong].title.toLowerCase()) {
         score++;
-        document.getElementById("playerScore").innerHTML = score;
+        playerScore.innerHTML = score;
     }
     else  {
-        alert("wrong title, go next")
+        alert("wrong title, go next");
     }
-    if (document.getElementById("artistName").value.toLowerCase() === solutionsTitle[0].artist.toLowerCase()) {
+    if (artistName.value.toLowerCase() === solutionsTitle[numberSong].artist.toLowerCase()) {
         score++;
-        document.getElementById("playerScore").innerHTML = score;
+        playerScore.innerHTML = score;
     }
     else  {
-        alert("wrong artist, go next")
+        alert("wrong artist, go next");
     }
-    onclick: this.disabled = true;
 });
 
 
-document.getElementById("nextSong").addEventListener("click", function () {
-numberSong++;
 
-});
