@@ -46,12 +46,12 @@ var songName = document.getElementById("songName");
 var artistName = document.getElementById("artistName");
 var songtoPlay = document.getElementById("Song"+ numberSong);
 var playerScore = document.getElementById("playerScore");
-
+var currentSong = document.getElementById("currentSong");
 // play and pause
 
 playButton.addEventListener("click", function () {
     songtoPlay.play();
-    document.getElementById("currentSong").innerHTML = `Song ${numberSong + 1}`;
+    currentSong.innerHTML = `Song ${numberSong + 2}`;
 
 
 });
@@ -62,12 +62,12 @@ pauseButton.addEventListener("click", function () {
 //Loading song
 
 nextButton.addEventListener("click", function () {
-    if (numberSong == (solutionsTitle.length-1)) {
-        document.getElementById("nextSong").innerHTML = "Finish Game";
+    if (numberSong == (solutionsTitle.length-2)) {
+        nextButton.innerHTML = "Finish Game";
     }
-    if (numberSong == solutionsTitle.length) {
+    if (numberSong == solutionsTitle.length-1) {
         alert(`The game has finished. Your score is ${playerScore.innerHTML}/${(solutionsTitle.length)*2}`);
-        document.getElementById("currentSong").innerHTML = "Finished!";
+        currentSong.innerHTML = "Finished!";
 
     } else {
         songtoPlay.pause();
@@ -77,9 +77,7 @@ nextButton.addEventListener("click", function () {
 
     }
     submitButton.disabled = false;
-    console.log(numberSong);
-    console.log(solutionsTitle.length);
-
+    console.log(numberSong, solutionsTitle.length-2);
 });
 
 
