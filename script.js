@@ -60,12 +60,19 @@ pauseButton.addEventListener("click", function () {
 //Loading song
 
 nextButton.addEventListener("click", function () {
-    songtoPlay.pause();
-    ++numberSong;
-    songtoPlay = document.getElementById("Song"+ numberSong);
+    if (numberSong == solutionsTitle.length) {
+        alert(`The game has finished. Your score is ${playerScore.innerHTML}/${(solutionsTitle.length)*2}`)
+    } else {
+        songtoPlay.pause();
+        ++numberSong;
+        songtoPlay = document.getElementById("Song"+ numberSong);
+    }
     submitButton.disabled = false;
     songName.innerHTML = "";
     artistName.innerHTML = "";
+    console.log(numberSong);
+    console.log(solutionsTitle.length);
+
 });
 
 
