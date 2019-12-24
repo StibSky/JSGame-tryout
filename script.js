@@ -51,6 +51,8 @@ var playerScore = document.getElementById("playerScore");
 
 playButton.addEventListener("click", function () {
     songtoPlay.play();
+    document.getElementById("currentSong").innerHTML = `Song ${numberSong + 1}`;
+
 
 });
 pauseButton.addEventListener("click", function () {
@@ -64,11 +66,15 @@ nextButton.addEventListener("click", function () {
         document.getElementById("nextSong").innerHTML = "Finish Game";
     }
     if (numberSong == solutionsTitle.length) {
-        alert(`The game has finished. Your score is ${playerScore.innerHTML}/${(solutionsTitle.length)*2}`)
+        alert(`The game has finished. Your score is ${playerScore.innerHTML}/${(solutionsTitle.length)*2}`);
+        document.getElementById("currentSong").innerHTML = "Finished!";
+
     } else {
         songtoPlay.pause();
         ++numberSong;
         songtoPlay = document.getElementById("Song"+ numberSong);
+        document.getElementById("currentSong").innerHTML = `Song ${numberSong + 1}`;
+
     }
     submitButton.disabled = false;
     console.log(numberSong);
