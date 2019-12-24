@@ -4,6 +4,30 @@ const solutionsTitle = [
     },
     {
         title: "piano man", artist: "billy joel"
+    },
+    {
+        title: "lose yourself", artist: "eminem"
+    },
+    {
+        title: "dance monkey", artist: "tones and i"
+    },
+    {
+        title: "one", artist: "metallica"
+    },
+    {
+        title: "do i wanna know", artist: "arctic monkeys"
+    },
+    {
+        title: "year 3000", artist: "busted"
+    },
+    {
+        title: "scar tissue", artist: "red hot chili peppers"
+    },
+    {
+        title: "whats my name again", artist: " blink 182"
+    },
+    {
+        title: "snake jazz", artist: "snake planet"
     }
     ];
 
