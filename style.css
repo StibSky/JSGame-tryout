@@ -2,7 +2,6 @@
     background-color: #462521;
     color: #FFE0B5;
     font-family: 'Josefin Sans', sans-serif;
-
 }
 
 #titel {
@@ -31,7 +30,6 @@
     border-radius: 10px;
     background-color: #8A6552;
     margin-top: 2vw;
-    width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -48,7 +46,6 @@
     flex-direction: column;
     padding: 2vw;
     margin-top: 1vw;
-    width: 280px;
     border-radius: 25px;
 
 
@@ -59,7 +56,7 @@
     display: flex;
     flex-direction: row;
     padding: 2vw;
-    width: 280px;
+    width: 4em;
     border-radius: 25px;
 
 
@@ -68,22 +65,21 @@
 #Section3 {
     background-color: #462521;
     display: flex;
-    flex-direction: row;
-    padding: 3vw;
-    margin-top: 2vw;
+    padding: 1em;
+    margin-top: 1em;
     border-radius: 25px;
+    justify-content: space-around;
 
-    text-align: justify;
 }
 
 #playerScore {
-    margin-left: 28vh;
+    padding-left: 1em;
 }
 
 #sumbit, #nextSong {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
 }
 
 #songName, #artistName{
@@ -91,7 +87,13 @@
 }
 
 #SongPlayPause {
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 10px;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        height: 300px;
+    }
 }
