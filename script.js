@@ -50,8 +50,9 @@ var currentSong = document.getElementById("currentSong");
 // play and pause
 
 playButton.addEventListener("click", function () {
+    console.log(numberSong);
     songtoPlay.play();
-    currentSong.innerHTML = `Song ${numberSong + 2}`;
+    currentSong.innerHTML = `Song ${numberSong+1}`;
 
 
 });
