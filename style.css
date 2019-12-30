@@ -17,6 +17,7 @@
         background-color: #CA2E55;
         color: #FFE0B5;
         padding: 1vh;
+        margin-bottom: 3em;
     }
 
 
@@ -90,9 +91,9 @@
     }
 
     #sumbit {
-        padding: 1em;
+        padding: 0.3em;
         border-radius: 10px;
-        
+        margin-bottom: 0.5em;
     }
 
     #songName, #artistName {
