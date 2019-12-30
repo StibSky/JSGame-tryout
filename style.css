@@ -16,8 +16,10 @@
         padding: 1vh;
     }
 
-    #currentSong {
-    }
+
+#play, #pause {
+    margin: 2em;
+}
 
     #play, #pause {
         margin: 11px;
