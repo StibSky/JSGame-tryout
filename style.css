@@ -2,7 +2,10 @@
     background-color: #462521;
     color: #FFE0B5;
     font-family: 'Josefin Sans', sans-serif;
-
+    margin: 0;
+    padding: 0;
+    /* styling op wrapper zorgt voor vreemde scaling */
+    height: 100vh;
 }
 
 
