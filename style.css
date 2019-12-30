@@ -4,7 +4,6 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
 
     #titel {
         justify-content: center;
@@ -34,8 +33,6 @@
         border-radius: 10px;
         background-color: #8A6552;
         margin-top: 2vw;
-        margin-left: auto;
-        margin-right: auto;
         width: fit-content;
         padding-left: 2em;
         padding-right: 2em;
@@ -101,4 +98,3 @@
         border-radius: 1em;
     }
 
-}
