@@ -79,14 +79,14 @@ submitButton.addEventListener("click", function () {
         playerScore.innerHTML = score;
     }
     else  {
-        alert(`wrong title, go next, the right answer was ${solutionsTitle[numberSong].title}`);
+        alert(`Wrong title, the right answer was "${solutionsTitle[numberSong].title}"`);
     }
     if (artistName.value.toLowerCase() === solutionsTitle[numberSong].artist.toLowerCase()) {
         score++;
         playerScore.innerHTML = score;
     }
     else  {
-        alert(`wrong title, go next, the right answer was ${solutionsTitle[numberSong].artist}`);
+        alert(`Wrong title, the right answer was "${solutionsTitle[numberSong].artist}"`);
     }
     songName.value = "";
     artistName.value = "";

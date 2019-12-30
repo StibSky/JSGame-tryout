@@ -4,96 +4,99 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#titel {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    background-color: #CA2E55;
-    color: #FFE0B5;
-    padding: 1vh;
-}
+@media only screen and (min-width: 768px) {
 
-#currentSong {
-}
-
-#play, #pause {
-    margin: 11px;
-}
-
-#centerDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    border-radius: 10px;
-    background-color: #8A6552;
-    margin-top: 2vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#playButtons {
-    background-color: #462521;
-    display: flex;
-    justify-content: space-between;
-}
-
-#Section1 {
-    background-color: #462521;
-    display: flex;
-    flex-direction: column;
-    padding: 2vw;
-    margin-top: 1vw;
-    border-radius: 25px;
-
-
-}
-
-#Section2 {
-    background-color: #462521;
-    display: flex;
-    flex-direction: row;
-    padding: 2vw;
-    width: 4em;
-    border-radius: 25px;
-
-
-}
-
-#Section3 {
-    background-color: #462521;
-    display: flex;
-    padding: 1em;
-    margin-top: 1em;
-    border-radius: 25px;
-    justify-content: space-around;
-
-}
-
-#playerScore {
-    padding-left: 1em;
-}
-
-#sumbit, #nextSong {
-    padding: 1em;
-    margin: 1em;
-    border-radius: 1em;
-}
-
-#songName, #artistName{
-    margin: 3vh;
-}
-
-#SongPlayPause {
-    padding: 1em;
-    margin-top: 1em;
-    border-radius: 1em;
-}
-
-@media only screen and (max-width: 800px) {
-    body {
-        height: 300px;
+    #titel {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        background-color: #CA2E55;
+        color: #FFE0B5;
+        padding: 1vh;
     }
+
+    #currentSong {
+    }
+
+    #play, #pause {
+        margin: 11px;
+    }
+
+    #centerDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-radius: 10px;
+        background-color: #8A6552;
+        margin-top: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        padding-left: 2em;
+        padding-right: 2em;
+        position: center;
+    }
+
+    #playButtons {
+        background-color: #462521;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Section1 {
+        background-color: #462521;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw;
+        margin-top: 1vw;
+        border-radius: 25px;
+
+
+    }
+
+    #Section2 {
+        background-color: #462521;
+        display: flex;
+        flex-direction: row;
+        padding: 2vw;
+        width: 4em;
+        border-radius: 25px;
+
+
+    }
+
+    #Section3 {
+        background-color: #462521;
+        display: flex;
+        padding: 1em;
+        margin-top: 1em;
+        border-radius: 25px;
+        justify-content: space-around;
+        margin-bottom: 1em;
+
+    }
+
+    #playerScore {
+        padding-left: 1em;
+    }
+
+    #sumbit {
+        padding: 1em;
+        border-radius: 10px;
+        
+    }
+
+    #songName, #artistName {
+        margin: 3vh;
+    }
+
+    #SongPlayPause {
+        padding: 1em;
+        margin-top: 1em;
+        border-radius: 1em;
+    }
+
 }
