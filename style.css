@@ -1,5 +1,5 @@
 * {
-    background-color: darkblue;
+    background-color: #462521;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
 
@@ -10,9 +10,12 @@
     align-items: center;
     align-content: center;
     text-align: center;
-    background-color: crimson;
-    color: yellow;
+    background-color: #CA2E55;
+    color: #FFE0B5;
     padding: 1vh;
+}
+
+#currentSong {
 }
 
 #play, #pause {
@@ -26,7 +29,7 @@
     align-items: center;
     align-content: center;
     border-radius: 10px;
-    background-color: lightgreen;
+    background-color: #8A6552;
     margin-top: 2vw;
     width: 400px;
     margin-left: auto;
@@ -34,37 +37,41 @@
 }
 
 #playButtons {
-    background-color: cadetblue;
+    background-color: #462521;
     display: flex;
     justify-content: space-between;
-    margin: 2vw;
 }
 
 #Section1 {
-    background-color: cadetblue;
+    background-color: #462521;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 2vw;
     margin-top: 1vw;
     width: 280px;
+    border-radius: 25px;
+
 
 }
 
 #Section2 {
-    background-color: cadetblue;
+    background-color: #462521;
     display: flex;
     flex-direction: row;
     padding: 2vw;
     width: 280px;
+    border-radius: 25px;
+
 
 }
 
 #Section3 {
-    background-color: cadetblue;
+    background-color: #462521;
     display: flex;
     flex-direction: row;
     padding: 3vw;
     margin-top: 2vw;
+    border-radius: 25px;
 
     text-align: justify;
 }
@@ -74,10 +81,17 @@
 }
 
 #sumbit, #nextSong {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 #songName, #artistName{
     margin: 3vh;
+}
+
+#SongPlayPause {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
 }
