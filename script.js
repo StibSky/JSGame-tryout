@@ -62,7 +62,34 @@ pauseButton.addEventListener("click", function () {
 
 //Loading song
 
-nextButton.addEventListener("click", function () {
+
+
+
+
+
+
+submitButton.addEventListener("click", function () {
+
+    let score = document.getElementById("playerScore").innerHTML;
+    submitButton.disabled = true;
+    songtoPlay.pause();
+
+    if (songName.value.toLowerCase() === solutionsTitle[numberSong].title.toLowerCase()) {
+        score++;
+        playerScore.innerHTML = score;
+    }
+    else  {
+        alert(`wrong title, go next, the right answer was ${solutionsTitle[numberSong].title}`);
+    }
+    if (artistName.value.toLowerCase() === solutionsTitle[numberSong].artist.toLowerCase()) {
+        score++;
+        playerScore.innerHTML = score;
+    }
+    else  {
+        alert(`wrong title, go next, the right answer was ${solutionsTitle[numberSong].artist}`);
+    }
+    songName.value = "";
+    artistName.value = "";
     if (numberSong == (solutionsTitle.length-2)) {
         nextButton.innerHTML = "Finish Game";
     }
@@ -79,32 +106,6 @@ nextButton.addEventListener("click", function () {
     }
     submitButton.disabled = false;
     console.log(numberSong, solutionsTitle.length-2);
-});
-
-
-
-
-
-
-submitButton.addEventListener("click", function () {
-    let score = document.getElementById("playerScore").innerHTML;
-    submitButton.disabled = true;
-    songtoPlay.pause();
-
-    if (songName.value.toLowerCase() === solutionsTitle[numberSong].title.toLowerCase()) {
-        score++;
-        playerScore.innerHTML = score;
-    }
-    else  {
-        alert("wrong title, go next");
-    }
-    if (artistName.value.toLowerCase() === solutionsTitle[numberSong].artist.toLowerCase()) {
-        score++;
-        playerScore.innerHTML = score;
-    }
-    else  {
-        alert("wrong artist, go next");
-    }
 });
 
 
