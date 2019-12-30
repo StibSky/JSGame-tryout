@@ -4,7 +4,13 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+
+    #titel {
+        display: none;
+    }
+}
+
 
     #titel {
         justify-content: center;
@@ -17,9 +23,9 @@
     }
 
 
-#play, #pause {
-    margin: 2em;
-}
+    #play, #pause {
+        margin: 2em;
+    }
 
     #play, #pause {
         margin: 11px;
@@ -88,7 +94,7 @@
     #sumbit {
         padding: 1em;
         border-radius: 10px;
-        
+
     }
 
     #songName, #artistName {
@@ -100,5 +106,3 @@
         margin-top: 1em;
         border-radius: 1em;
     }
-
-}
