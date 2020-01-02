@@ -1,8 +1,11 @@
 #pageWrapper {
-    background-color: #462521;
+    background-image: linear-gradient(to top right, #7C38EB,#F200B8, #FF3580,#FF8355,#FFC349,#F9F871);
     color: #FFE0B5;
     font-family: 'Josefin Sans', sans-serif;
-
+    margin: 0;
+    padding: 0;
+    /* styling op wrapper zorgt voor vreemde scaling */
+    height: 100vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -19,9 +22,9 @@
         align-items: center;
         align-content: center;
         text-align: center;
-        background-color: #CA2E55;
-        color: #FFE0B5;
+        color: red;
         padding: 1vh;
+        margin-bottom: 3em;
     }
 
 
@@ -40,7 +43,7 @@
         align-items: center;
         align-content: center;
         border-radius: 10px;
-        background-color: #8A6552;
+        opacity: 0.7;
         margin-top: 2vw;
         width: fit-content;
         padding-left: 2em;
@@ -52,24 +55,23 @@
     }
 
     #playButtons {
-        background-color: #462521;
+        background-color: #FF4025;
         display: flex;
         justify-content: space-between;
     }
 
     #Section1 {
-        background-color: #462521;
+        background-color: #FF4025;
         display: flex;
         flex-direction: column;
         padding: 2vw;
         margin-top: 1vw;
         border-radius: 25px;
 
-
     }
 
     #Section2 {
-        background-color: #462521;
+        background-color: #FF4025;
         display: flex;
         flex-direction: row;
         padding: 2vw;
@@ -80,7 +82,7 @@
     }
 
     #Section3 {
-        background-color: #462521;
+        background-color: #FF4025;
         display: flex;
         padding: 1em;
         margin-top: 1em;
@@ -95,9 +97,10 @@
     }
 
     #sumbit {
-        padding: 1em;
+        padding: 0.3em;
         border-radius: 10px;
 
+        margin-bottom: 0.5em;
     }
 
     #songName, #artistName {
@@ -110,3 +113,7 @@
         border-radius: 1em;
     }
 
+
+    #dame {
+        float: right;
+    }

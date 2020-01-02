@@ -86,7 +86,7 @@ submitButton.addEventListener("click", function () {
         playerScore.innerHTML = score;
     }
     else  {
-        alert(`Wrong title, the right answer was "${solutionsTitle[numberSong].artist}"`);
+        alert(`Wrong artist, the right answer was "${solutionsTitle[numberSong].artist}"`);
     }
     songName.value = "";
     artistName.value = "";
