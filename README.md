@@ -1,4 +1,4 @@
-# musicgame I made together with https://github.com/EddyGHendrickx
+##### musicgame we created together ( https://github.com/EddyGHendrickx )
 
 
 link to site of our music game
