@@ -1,7 +1,8 @@
-* {
+#pageWrapper {
     background-color: #462521;
     color: #FFE0B5;
     font-family: 'Josefin Sans', sans-serif;
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -10,6 +11,7 @@
         display: none;
     }
 }
+
 
 
     #titel {
@@ -40,12 +42,13 @@
         border-radius: 10px;
         background-color: #8A6552;
         margin-top: 2vw;
-        margin-left: auto;
-        margin-right: auto;
         width: fit-content;
         padding-left: 2em;
         padding-right: 2em;
         position: center;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
     #playButtons {
@@ -106,3 +109,4 @@
         margin-top: 1em;
         border-radius: 1em;
     }
+
